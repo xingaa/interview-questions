@@ -1,0 +1,23 @@
+.header {
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-left: 24px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin: 48px;
+}
+
+.searchForm {
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

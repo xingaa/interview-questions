@@ -1,0 +1,116 @@
+.search {
+    padding: 24px 0;
+    // height: 100vh;
+
+    .header {
+        display: flex;
+        border-bottom: 2px solid red;
+        height: 80px;
+
+        align-items: center;
+
+        .icon {
+            display: block;
+            padding: 0 12px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+
+            // &::after {
+            //     content: 'BS';
+
+            // }
+        }
+
+        @media screen and (max-width:1000px) {
+            .icon {
+                color: #fff;
+                width: 48px;
+                position: relative;
+                overflow: hidden;
+                height: 48px;
+
+                &::after {
+                    color: #fff;
+                    content: 'BS';
+                    position: absolute;
+                    top: 0;
+                    left: 12px;
+                    width: 48px;
+                    height: 48px;
+                    background-color: #666;
+                    border-radius: 6px;
+                    text-align: center;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+
+    .contents {
+        max-width: 1000px;
+        // min-height: calc(100% - 80px);
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 24px 0;
+
+        .card {
+            min-height: 120px;
+            width: 21%;
+            margin: 12px 2%;
+
+            .itemTitle {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 100%;
+            }
+        }
+
+
+
+        .loading {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .loadingCard {
+                width: 21%;
+                margin: 12px 2%;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .card {
+                width: 42%;
+                margin: 12px 4%;
+
+            }
+
+            .loading {
+                .loadingCard {
+                    width: 42%;
+                    margin: 12px 4%;
+
+                }
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .card {
+                width: 90%;
+                margin: 12px 5%;
+
+            }
+
+            .loading {
+                .loadingCard {
+                    width: 90%;
+                    margin: 12px 5%;
+
+                }
+            }
+        }
+    }
+}
